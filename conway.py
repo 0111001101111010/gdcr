@@ -20,6 +20,11 @@ class Cell_Tests(unittest.TestCase):
 
         self.assertEqual(cell.state, True)
 
+    def test_cell_get_neighbors_returns_list(self):
+        cell = Cell()
+        neighbors = cell.get_neighbors()
+
+        self.assertEqual(type(neighbors), list)
 
 if __name__ == '__main__':
     unittest.main()

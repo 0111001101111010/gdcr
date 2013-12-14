@@ -6,6 +6,7 @@ class Cell():
     # postion(X, Y)
     def __init__(self, state=False, position=(0,0)):
         self.position = position
+        self.state = state
 
 class Cell_Tests(unittest.TestCase):
     def test_cell_position_on_init(self):
